@@ -14,7 +14,7 @@ int main(){
             for (int j =0 ; j < 3; ++j) {
                 avg +=image2(i,k,j);}
             for (int j =0 ; j < 3; ++j) {
-                if ((avg / 3) > 128) {
+                if ((avg / 3) >= 128) {
                     image2(i, k, j) = 255.;
                 } else if ((avg / 3) < 128) {
                     image2(i, k, j) = 0;
